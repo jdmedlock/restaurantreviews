@@ -1,0 +1,25 @@
+{
+  "name": "restaurantreviews",
+  "version": "1.0.0",
+  "description": "Udacity Front End Web Developer Nanodegree - Restaurant Reviews Project",
+  "main": "index.html",
+  "scripts": {
+    "serve": "python -m SimpleHTTPServer 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmedlock/restaurantreviews.git"
+  },
+  "keywords": [
+    "udacity",
+    "nanodegree",
+    "javascript"
+  ],
+  "author": "Jim D. Medlock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdmedlock/restaurantreviews/issues"
+  },
+  "homepage": "https://github.com/jdmedlock/restaurantreviews#readme"
+}

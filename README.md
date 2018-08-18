@@ -1,32 +1,55 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews Project
 
-## Project Overview: Stage 1
+[![restaurantreviews last commit](https://img.shields.io/github/last-commit/google/skia.svg)](https://github.com/jdmedlock/restaurantreviews)
+<br/>
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/jdmedlock/restaurantreviews/)
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Table of Contents
 
-### Specification
+* [Overview](#overview)
+* [Usage](#usage)
+* [Dependencies](#dependencies)
+* [Change Log](#change-log)
+* [Contributing](#contributing)
+* [Authors](#authors)
+* [License](#license)
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## Overview
 
-### What do I do from here?
+The Restaurant Reviews project was created as part of the Web Programming with
+Javascript section of the [Udacity Front-End Web Developer Nanodegree Program](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001). The
+purpose of this assignment is to demonstrate mastery of the a number of
+advanced front end developer skills including responsive design,
+accessibility, and front end first orientation.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+You can find the app here --> [Restaurant Reviews](https://jdmedlock.github.io/restaurantreviews/)
+and the project instructions here -->[Project Specification](https://jdmedlock.github.io/restaurantreviews/project_info.md)
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+## Usage
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+<tbd>
 
-## Leaflet.js and Mapbox:
+## Dependencies
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+This app has the following dependencies
 
-### Note about ES6
+| Module/Library | Environment | Description | Related Files |
+|:---------------|:------------|:------------|:--------------|
+| NPM            | Development | Package manager | package.json |
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+## Change Log
 
+For more information see [Change Log](https://github.com/jdmedlock/restaurantreviews/blob/development/CHANGELOG.md)
 
+## Contributing
 
+See [Contributing](https://github.com/jdmedlock/restaurantreviews/blob/development/CONTRIBUTING.md)
+and our [Collaborator Guide](https://github.com/jdmedlock/restaurantreviews/blob/development/COLLABORATOR_GUIDE.md).
+
+## Authors
+
+Developers on this project can be found on the [Contributors](https://github.com/jdmedlock/restaurantreviews/graphs/contributors) page of this repo.
+
+## License
+
+[MIT](https://tldrlegal.com/license/mit-license)
