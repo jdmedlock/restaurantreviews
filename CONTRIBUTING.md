@@ -21,7 +21,7 @@ Resolves: <issue URL>
 See also: <reference URLs>
 ```
 
-_Type_ describes the nature of the change and should be one of the following: 
+_Type_ describes the nature of the change and should be one of the following:
 
 - `feature`: a new feature
 - `fix`: a bug fix
@@ -61,7 +61,10 @@ the API and the documentation.
 
 ### Developing
 
-*_TBD_*
+The `gh-pages` branch has been set up to facilitate testing of your changes
+without impacting the production environment. Although its always an option
+to test your changes locally you may also choose to release the changes in your
+working branch to `gh-pages` to test from GitHub Pages.
 
 #### Git Branches
 
@@ -74,18 +77,43 @@ work in working branches, which are then pulled into this branch. All code
 pulled into this branch must be tested and undergo peer review as part of the
 PR process.
 - `working branches`: Are individual branches created by each developer when
-they are working on changes and bug fixes. There are 4 basic types of branches: 
-bug, feature, refactor and style, after the type comes the name, it should 
+they are working on changes and bug fixes. There are 4 basic types of branches:
+bug, feature, refactor and style, after the type comes the name, it should
 specify on top of the branch type. For example feature/course-review.
-
+- `gh-pages`: A special working branch setup to support testing your changes
+from GitHub pages rather than your local environment.
 
 Please don't include changes to `dist/` in your pull request. This should only
 be updated when releasing a new version.
 
 ### Releasing
 
-*_TBD_*
+To release a new production version of the app please follow these steps.
+
+1. As you are developing remember to update the `README.md` and `CHANGELOG.md`
+in your working branch so that when your changes are released users will
+understand what changes have been made, when they were made available, and
+how to use or leverage them. The change log is also useful should defects be
+reported later on since it is a represention the applications timeline of
+modifications.
+2. Test, test, and then test again in your local environment. Be sure to
+test from the persepective of an end user rather than as a developer. Remember
+that not only must the functionality of a production ready version be bug-free,
+but it must also be:
+  - Performant
+  - Accessible
+  - Responsive
+3. After completing testing in your local environment PR from your working
+branch to the `gh-pages` branch and repeat your testing. Testing from GitHub
+Pages has the advantage of testing in a true production environment that is
+useful for exposing flaws, such as performance issues, that might not be
+noticed in a local environment.
+4. Once testing has been completed promote from your working branch to the
+`development` branch and request a peer review. If any changes are required
+following the review repeat testing as described above.
+5. Finally, to move your changes into production PR from the `development`
+branch to the `master` branch.
 
 ### Running Examples
 
-*_TBD_*
+Refer to the GitHub Pages discussion above.
