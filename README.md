@@ -22,12 +22,20 @@ purpose of this assignment is to demonstrate mastery of the a number of
 advanced front end developer skills including responsive design,
 accessibility, and front end first orientation.
 
-You can find the app here --> [Restaurant Reviews](https://jdmedlock.github.io/restaurantreviews/)
-and the project instructions here -->[Project Specification](https://jdmedlock.github.io/restaurantreviews/project_info.md)
+You can try out the app here --> [Restaurant Reviews](https://jdmedlock.github.io/restaurantreviews/),
+and the project instructions here -->[Project Specification](https://jdmedlock.github.io/restaurantreviews/project_info.md).
 
 ## Usage
 
-<tbd>
+### UI Features
+
+*_TBD_*
+
+### Starting the App
+
+To start the application simply run `npm run serve` from the command line to
+start the application environment. To use the application navigate to the
+`localhost:8000` url in your browser.
 
 ## Dependencies
 
@@ -35,6 +43,8 @@ This app has the following dependencies
 
 | Module/Library | Environment | Description | Related Files |
 |:---------------|:------------|:------------|:--------------|
+| leafletjs      | Production  | Mobile Maps | An open-source JavaScript library for mobile-friendly interactive maps |
+| Mapbox         | Production  | Map API     | The `mapboxToken` attribute in both `main.js` and `restaurant_info.js` must contain your Mapbox authentication token |
 | NPM            | Development | Package manager | package.json |
 
 ## Change Log
