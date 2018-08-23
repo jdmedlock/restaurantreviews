@@ -6,6 +6,10 @@
   grid-area: header;
 }
 
+#breadcrumb {
+  grid-area: breadcrumb;
+}
+
 #map-container {
   grid-area: map;
 }
@@ -28,9 +32,11 @@
   grid-template-columns: 6fr 6fr;
   grid-template-areas: 
     "header header"
+    "breadcrumb breadcrumb"
     "restaurant map"
     "reviews map"
     "footer footer";
+  width: 100%;
 }
 
 /* For small screen devices use a single column layout */
@@ -38,13 +44,15 @@
   .wrapper {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 6fr;
+    grid-template-columns: 12fr;
     grid-template-areas: 
       "header"
+      "breadcrumb"
       "map"
       "restaurant"
       "reviews"
       "footer";
+    width: 100%;
   }
 }
 
@@ -54,12 +62,13 @@ body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
-	line-height: 1.5;
+  line-height: 1.5;
+  width: 100%;
 }
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+  position:relative;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -120,8 +129,7 @@ nav h1 a {
     list-style: none;
     background-color: #eee;
     font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -153,6 +161,7 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -245,7 +254,7 @@ nav h1 a {
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -308,7 +317,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
