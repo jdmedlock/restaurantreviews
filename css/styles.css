@@ -36,15 +36,14 @@
     "restaurant map"
     "reviews map"
     "footer footer";
-  width: 100%;
 }
 
 /* For small screen devices use a single column layout */
-@media  (max-width: 480px) {
+@media screen and (min-width: 760px) {
   .wrapper {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 12fr;
+    grid-template-columns: 100%;
     grid-template-areas: 
       "header"
       "breadcrumb"
@@ -52,7 +51,6 @@
       "restaurant"
       "reviews"
       "footer";
-    width: 100%;
   }
 }
 
@@ -63,7 +61,6 @@ body,td,th,p{
 	font-size: 10pt;
 	color: #333;
   line-height: 1.5;
-  width: 100%;
 }
 body {
 	background-color: #fdfdfd;
@@ -91,11 +88,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  width: 100%
 }
 #footer {
   background-color: #444;
@@ -299,7 +297,7 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
