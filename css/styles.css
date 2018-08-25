@@ -1,16 +1,71 @@
 @charset "utf-8";
-/* CSS Document */
+
+/* ====================== Grid Layout ====================== */
+
+#header {
+  grid-area: header;
+}
+
+#breadcrumb {
+  grid-area: breadcrumb;
+}
+
+#map-container {
+  grid-area: map;
+}
+
+#restaurant-container {
+  grid-area: restaurant;
+}
+
+#reviews-container {
+  grid-area: reviews;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/* Default to 2-column layout */
+.wrapper {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-areas: 
+    "header header"
+    "breadcrumb breadcrumb"
+    "restaurant map"
+    "reviews map"
+    "footer footer";
+}
+
+/* For small screen devices use a single column layout */
+@media screen and (min-width: 760px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "header"
+      "breadcrumb"
+      "map"
+      "restaurant"
+      "reviews"
+      "footer";
+  }
+}
+
+/* ============= HTML Tag Attribute overrides ============== */
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
-	line-height: 1.5;
+  line-height: 1.5;
 }
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+  position:relative;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -33,11 +88,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  width: 100%
 }
 #footer {
   background-color: #444;
@@ -47,6 +103,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -70,8 +127,7 @@ nav h1 a {
     list-style: none;
     background-color: #eee;
     font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -103,6 +159,7 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -195,7 +252,7 @@ nav h1 a {
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -205,7 +262,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -240,7 +297,7 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -258,7 +315,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
