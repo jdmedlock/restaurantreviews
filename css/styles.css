@@ -309,20 +309,20 @@ nav h1 a {
 }
 
 #restaurant-img {
-	width: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 10px;
-  margin: 0 0 20px;
-  padding: 2px 0;
+  letter-spacing: .5rem;
+  margin: -5px 0 0 0;
   text-align: center;
   text-transform: uppercase;
-	width: 100%;
+  width: 100%;
 }
 
 #restaurant-address {
