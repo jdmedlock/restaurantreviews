@@ -168,7 +168,6 @@ nav h1 a {
   grid-auto-flow: row;
   background-color: #3397DB;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
 }
 
@@ -210,15 +209,14 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: auto;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 0 2rem 2rem;
   text-align: left;
   align-items: center;
-  width: 270px;
+  width: 85%;
 }
 
 #restaurants-list .restaurant-img {
   background-color: #ccc;
-  display: block;
   margin: 0;
   max-width: 100%;
   min-height: 248px;
