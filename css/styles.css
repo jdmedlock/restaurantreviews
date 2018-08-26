@@ -309,6 +309,7 @@ nav h1 a {
 }
 
 #restaurant-img {
+  border-top-left-radius: 40px 40px;
   width: 100%;
   margin: 0;
 }
