@@ -198,8 +198,8 @@ nav h1 a {
   grid-template-columns: 100%;
   background-color: #f3f3f3;
   list-style: outside none none;
-  margin: 0;
-  padding: 30px 15px 60px;
+  margin: auto;
+  padding: 0rem .5rem 0rem;
   text-align: center;
 }
 
@@ -207,9 +207,9 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: auto;
-  min-height: 380px;
-  padding: 0 2rem 2rem;
+  margin: .5rem auto .5rem auto;
+  min-height: 280px;
+  padding: 0 1rem 1rem;
   text-align: left;
   align-items: center;
   width: 85%;
