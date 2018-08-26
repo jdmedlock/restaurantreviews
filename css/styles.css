@@ -93,43 +93,45 @@ header {
   vertical-align: middle;
 }
 
+header {
+  display: grid;
+  height: 6rem;
+  width: 100%;
+  background-color: #252831;
+}
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
   width: 100%
 }
 
-#footer {
-  background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  align-items: center;
-  width: 100%;
-}
-
 /* ====================== Navigation ====================== */
 nav {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: auto;
   width: 100%;
-  background-color: #252831;
-  height: 100%;
-  margin: 0;
 }
 
 nav h1 {
-  margin: 2em;
+  vertical-align: middle;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 nav h1 a {
   color: #fff;
-  font-size: 1em;
-  font-weight: 100;
+  font-size: .75rem;
+  font-weight: 200;
   line-height: 2em;
-  letter-spacing: 1rem;
+  letter-spacing: .75rem;
   text-transform: uppercase;
+  width: 100%;
 }
 
 #breadcrumb {
@@ -177,17 +179,16 @@ nav h1 a {
   grid-auto-flow: row;
   background-color: #3397DB;
   align-items: center;
-  justify-content: start;
   width: 100%;
 }
 
 .filter-options h2 {
   grid-row: 1;
   color: white;
-  font-size: 2em;
+  font-size: .75rem;
   font-weight: normal;
   line-height: 1;
-  margin: 0 1rem 0 2rem;
+  margin: .75rem .5rem .75rem .5rem;
   width: 6em;
 }
 
@@ -196,11 +197,10 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 2em;
-  height: 2em;
-  width: 10em;
-  letter-spacing: 0;
-  margin: 1em;
+  font-size: .75rem;
+  height: 1rem;
+  width: 8rem;
+  margin: .75rem .5rem .75rem .5rem;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -209,8 +209,8 @@ nav h1 a {
   grid-template-columns: 100%;
   background-color: #f3f3f3;
   list-style: outside none none;
-  margin: 0;
-  padding: 30px 15px 60px;
+  margin: auto;
+  padding: 0rem .5rem 0rem;
   text-align: center;
 }
 
@@ -218,16 +218,16 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
-  padding: 0 30px 25px;
+  margin: .5rem auto .5rem auto;
+  min-height: 280px;
+  padding: .5rem 1rem 1rem;
   text-align: left;
-  width: 270px;
+  align-items: center;
+  width: 85%;
 }
 
 #restaurants-list .restaurant-img {
   background-color: #ccc;
-  display: block;
   margin: 0;
   max-width: 100%;
   min-height: 248px;
@@ -367,6 +367,25 @@ nav h1 a {
 
 #restaurant-hours td {
   color: #666;
+}
+
+/* ==================== Page Footer ==================== */
+#footer {
+  background-color: #444;
+  color: #aaa;
+  font-size: .5rem;
+  letter-spacing: .25rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 4rem;
+  margin: auto;
+}
+
+#footer .copyright {
+  vertical-align: middle;
+  margin: 0px;
+  padding: 1rem;
 }
 
 /* ============== Device-specifity Layout ============== */
