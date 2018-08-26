@@ -179,17 +179,17 @@ nav h1 a {
   grid-auto-flow: row;
   background-color: #3397DB;
   align-items: center;
-  justify-content: start;
+  justify-content: space-around;
   width: 100%;
 }
 
 .filter-options h2 {
   grid-row: 1;
   color: white;
-  font-size: 2em;
+  font-size: .75rem;
   font-weight: normal;
   line-height: 1;
-  margin: 0 1rem 0 2rem;
+  margin: .75rem .5rem .75rem .5rem;
   width: 6em;
 }
 
@@ -198,11 +198,10 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 2em;
-  height: 2em;
-  width: 10em;
-  letter-spacing: 0;
-  margin: 1em;
+  font-size: .75rem;
+  height: 1rem;
+  width: 8rem;
+  margin: .75rem .5rem .75rem .5rem;
 }
 
 /* ====================== Restaurant Listing ====================== */
