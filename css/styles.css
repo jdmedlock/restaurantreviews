@@ -359,10 +359,32 @@ nav h1 a {
 #reviews-list li {
   background-color: #fff;
   border: 2px solid #f3f3f3;
+  border-top-left-radius: 40px 40px;
   list-style-type: none;
   margin: 0 1rem 1rem 1rem;
   padding: .5rem 1rem .5rem 1rem;
   width: 80%;
+}
+
+.reviews-banner {
+  display: inline-flex;
+  background-color: #333;
+  color: #ddd;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews-banner-left {
+  align-self: start;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.reviews-banner-right {
+  align-self: end;
+  width: 100%;
+  text-align: right;
 }
 
 #reviews-list li p {
@@ -375,6 +397,7 @@ nav h1 a {
   color: #fff;
   text-align: center;
   width: 4rem;
+  margin: .5rem;
 }
 
 /* ==================== Page Footer ==================== */
