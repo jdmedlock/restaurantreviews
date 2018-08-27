@@ -369,6 +369,14 @@ nav h1 a {
   margin: 0 0 1rem;
 }
 
+#reviews-list .rating {
+  background-color: orange;
+  border-bottom: 3px solid #eee;
+  color: #fff;
+  text-align: center;
+  width: 4rem;
+}
+
 /* ==================== Page Footer ==================== */
 #footer {
   background-color: #444;
