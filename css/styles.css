@@ -357,13 +357,11 @@ nav h1 a {
 }
 
 #reviews-list li {
-  background-color: #fff;
   border: 2px solid #f3f3f3;
-  border-top-left-radius: 40px 40px;
   list-style-type: none;
   margin: 0 1rem 1rem 1rem;
-  padding: .5rem 1rem .5rem 1rem;
-  width: 80%;
+  padding: 0;
+  width: 90%;
 }
 
 .reviews-banner {
@@ -371,24 +369,32 @@ nav h1 a {
   background-color: #333;
   color: #ddd;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 0;
+  border-top-left-radius: 40px 40px;
 }
 
 .reviews-banner-left {
   align-self: start;
   width: 100%;
   font-size: 1rem;
+  margin: .75rem 1rem 0 1.5rem;
 }
 
 .reviews-banner-right {
   align-self: end;
   width: 100%;
   text-align: right;
+  margin: .75rem 1.5rem 0 1rem;
+}
+
+.reviews-content {
+  background-color: #fff;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
 #reviews-list li p {
-  margin: 0 0 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 #reviews-list .rating {
@@ -397,7 +403,7 @@ nav h1 a {
   color: #fff;
   text-align: center;
   width: 4rem;
-  margin: .5rem;
+  margin: 1rem;
 }
 
 /* ==================== Page Footer ==================== */
