@@ -89,7 +89,7 @@ header {
   justify-items: center;
   text-align: center;
   margin: auto auto auto auto;
-  height: 8rem;
+  height: 6rem;
   width: 100%;
   vertical-align: middle;
   background-color: #252831;
@@ -123,10 +123,10 @@ nav h1 {
 
 nav h1 a {
   color: #fff;
-  font-size: .75rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 100;
   line-height: 2em;
-  letter-spacing: .75rem;
+  letter-spacing: .5rem;
   text-transform: uppercase;
   width: 100%;
 }
