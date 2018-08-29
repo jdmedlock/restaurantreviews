@@ -144,19 +144,32 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 }
 
 /**
- * Create review HTML and add it to the webpage.
+ * @description Create review HTML and add it to the webpage. The following
+ * structure is created and added to the DOM as a list element:
+ *  <li>
+ *    <div class="reviews-banner">
+ *      <span class="reviews-banner-left"/>
+ *      <span class="reviews-banner-right"/>
+ *    </div>
+ *    <div class="reviews-content">
+ *      <p class="rating">...</p>
+ *      <p>...</p>
+ *    </div>
+ *  </li>
+ * @param {Object} review Review information
+ * @returns {Object} List element
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
   const div1 = document.createElement('div');
   div1.className = 'reviews-banner';
 
-  const name = document.createElement('span');
+  const name = document.createElement('div');
   name.innerHTML = review.name;
   name.className = 'reviews-banner-left';
   div1.appendChild(name);
 
-  const date = document.createElement('span');
+  const date = document.createElement('div');
   date.innerHTML = review.date;
   date.className = 'reviews-banner-right';
   div1.appendChild(date);
