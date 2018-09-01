@@ -230,7 +230,7 @@ nav h1 a {
   display: inline-block;
   font-size: 1.3rem;
   margin: 1rem 0 0 .5rem;
-  padding: 1rem;
+  padding: .5rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -405,8 +405,27 @@ nav h1 a {
 
 /* ============== Device-specific Layouts ============== */
 
-/* For large screen devices use a multiple column layout */
-@media screen and (min-width: 760px) {
+/* For larger mobile devices use a larger font */
+@media screen and (min-width: 425px) and (max-width: 1023px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "breadcrumb"
+      "map"
+      "restaurant"
+      "reviews"
+      "footer";
+  }
+  #restaurants-list p {
+    font-size: 1.5rem;
+  }
+}
+
+/* For laptops and desktops use a multiple column layout */
+@media screen and (min-width: 1024px) {
   .wrapper {
     display: grid;
     grid-gap: 5px;
@@ -424,5 +443,8 @@ nav h1 a {
     grid-auto-flow: row;
     grid-gap: 10px;
     grid-template: repeat(4, 4fr) / repeat(2, 4fr);
+  }
+  #restaurants-list p {
+    font-size: 1.5rem;
   }
 }
