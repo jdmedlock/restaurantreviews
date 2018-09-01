@@ -58,6 +58,7 @@ ul, li {
 	font-size: 1rem;
   color: #333;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -337,16 +338,16 @@ nav h1 a {
   width: 100%;
 }
 
+#restaurant-address {
+  margin: 1rem 0 0 1rem;
+}
+
 #restaurant-hours {
   margin: 1rem 1rem;
 }
 
 #restaurant-hours td {
   color: #666;
-}
-
-#reviews-container {
-  width: 100%;
 }
 
 #reviews-container h2 {
@@ -365,9 +366,9 @@ nav h1 a {
 #reviews-list li {
   border: 2px solid #f3f3f3;
   list-style-type: none;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 0;
   padding: 0;
-  width: 90%;
+  width: 100%;
 }
 
 .reviews-banner {
