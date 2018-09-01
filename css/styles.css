@@ -237,7 +237,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-/* -------------- Restaurant Details -------------- */
+/* ------------ Restaurant Details Page ------------ */
 #breadcrumb {
   list-style: none;
   background-color: #eee;
@@ -268,34 +268,6 @@ nav h1 a {
 #breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
-}
-
-.inside header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 100%;
-}
-
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
-}
-
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
 }
 
 #restaurant-container, #reviews-container {
