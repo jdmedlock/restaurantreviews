@@ -422,6 +422,9 @@ nav h1 a {
   #restaurants-list p {
     font-size: 1.5rem;
   }
+  #restaurant-name {
+    font-size: 2rem;
+  }
 }
 
 /* For laptops and desktops use a multiple column layout */
@@ -446,5 +449,8 @@ nav h1 a {
   }
   #restaurants-list p {
     font-size: 1.5rem;
+  }
+  #restaurant-name {
+    font-size: 3rem;
   }
 }
