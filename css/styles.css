@@ -42,7 +42,7 @@
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 1.3rem;
 	color: #333;
   line-height: 1.5;
 }
@@ -55,7 +55,7 @@ body {
 
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 1rem;
   color: #333;
   margin: 0;
 }
@@ -224,7 +224,7 @@ nav h1 a {
 
 #restaurants-list p {
   margin: 0 0 0 .5rem;
-  font-size: 11pt;
+  font-size: 1.3rem;
 }
 
 #restaurants-list li a {
@@ -232,7 +232,7 @@ nav h1 a {
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 1rem 0 0;
   padding: 1rem 1rem 1rem;
   text-align: center;
@@ -245,7 +245,7 @@ nav h1 a {
 #breadcrumb {
   list-style: none;
   background-color: #eee;
-  font-size: 17px;
+  font-size: 1rem;
   width: 100%;
   padding: 0 1rem 0 1rem;
 }
@@ -328,18 +328,13 @@ nav h1 a {
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: .5rem;
   margin: -5px 0 0 0;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-}
-
-#restaurant-address {
-  font-size: 1rem;
-  margin: 1rem 1rem;
 }
 
 #restaurant-hours {
@@ -364,7 +359,7 @@ nav h1 a {
 
 #reviews-list {
   margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
 #reviews-list li {
@@ -379,7 +374,7 @@ nav h1 a {
   display: inline-flex;
   background-color: #333;
   color: #ddd;
-  border-top-left-radius: 40px 40px;
+  border-top-left-radius: 30px 30px;
   width: 100%;
   height: 2.5rem;
 }
@@ -388,7 +383,7 @@ nav h1 a {
   align-self: start;
   vertical-align: middle;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: auto 0 auto 1.5rem;
 }
 
@@ -396,28 +391,28 @@ nav h1 a {
   align-self: end;
   vertical-align: middle;
   width: 100%;
-  font-size: .75rem;
+  font-size: 1rem;
   text-align: right;
   margin: auto 1rem auto 0;
 }
 
 .reviews-content {
   background-color: #fff;
-  margin: 0 auto auto auto;
   padding: 1rem;
 }
 
 #reviews-list .rating {
   background-color: orange;
   color: #fff;
+  width: 7rem;
+  border-radius: 5px;
+  margin: auto auto auto .5rem;
   text-align: center;
-  width: 4rem;
-  border-radius: 4px;
-  margin: auto 0 auto .5rem;
+  vertical-align: middle;
 }
 
 #reviews-list li p {
-  margin: 1rem .5rem 0 .5rem;
+  margin: .5rem .5rem auto .5rem;
 }
 
 
