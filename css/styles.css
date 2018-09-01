@@ -296,10 +296,10 @@ nav h1 a {
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 300;
   letter-spacing: .5rem;
-  margin: -5px 0 0 0;
+  margin: -10px 0 0 0;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -425,6 +425,9 @@ nav h1 a {
   #restaurant-name {
     font-size: 2rem;
   }
+  #restaurant-cuisine {
+    font-size: 1.5rem;
+  }
 }
 
 /* For laptops and desktops use a multiple column layout */
@@ -452,5 +455,8 @@ nav h1 a {
   }
   #restaurant-name {
     font-size: 3rem;
+  }
+  #restaurant-cuisine {
+    font-size: 2rem;
   }
 }
