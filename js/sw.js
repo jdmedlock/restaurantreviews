@@ -4,7 +4,7 @@ const NOT_FOUND = -1;
 // Cache our app resources when the install event is fired
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(cacheID.then((cache) => {
+    caches.open(cacheID).then((cache) => {
       return cache.addAll([
         '/',
         '/index.html',
@@ -15,13 +15,12 @@ self.addEventListener('install', (event) => {
         '/js/dbhelper.js',
         '/js/main.js',
         '/js/restaurant_info.js',
-        '/js/register.js',
         '/img/na.png'
       ])
       .catch((error) => {
         console.log('Failed to open the cache - ', error);
       });
-    }))
+    })
   );
 });
 
@@ -42,7 +41,7 @@ self.addEventListener('fetch', (event) => {
           return caches.open(cacheID).then((cache) => {
             cache.put(event.request, response.clone());
             return response;
-          })
+          });
         })
         .catch((error) => {
           // If an image is not available substitute the not found image
