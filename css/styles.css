@@ -207,7 +207,7 @@ nav h1 a {
   border-top-left-radius: 40px 40px;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: rgba(136, 89, 2, 0.945);
   font-family: Arial,sans-serif;
   font-size: 1.5rem;
@@ -319,7 +319,7 @@ nav h1 a {
 }
 
 #reviews-container h2 {
-  background-color: rgba(136, 89, 2, 0.945);
+  color: rgba(136, 89, 2, 0.945);
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: -1px;
