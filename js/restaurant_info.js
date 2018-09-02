@@ -4,7 +4,7 @@ var newMap;
 /**
  * Initialize map as soon as the page is loaded.
  */
-document.addEventListener('DOMContentLoaded', (event) => {  
+document.addEventListener('DOMContentLoaded', (event) => {
   initMap();
 });
 
@@ -15,7 +15,7 @@ initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) { // Got an error!
       console.error(error);
-    } else {      
+    } else {
       self.newMap = L.map('map', {
         center: [restaurant.latlng.lat, restaurant.latlng.lng],
         zoom: 16,
@@ -27,29 +27,13 @@ initMap = () => {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
           'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        id: 'mapbox.streets'    
+        id: 'mapbox.streets'
       }).addTo(newMap);
       fillBreadcrumb();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
     }
   });
-}  
- 
-/* window.initMap = () => {
-  fetchRestaurantFromURL((error, restaurant) => {
-    if (error) { // Got an error!
-      console.error(error);
-    } else {
-      self.map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: restaurant.latlng,
-        scrollwheel: false
-      });
-      fillBreadcrumb();
-      DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
-    }
-  });
-} */
+}
 
 /**
  * Get current restaurant from page URL.
@@ -144,25 +128,50 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 }
 
 /**
- * Create review HTML and add it to the webpage.
+ * @description Create review HTML and add it to the webpage. The following
+ * structure is created and added to the DOM as a list element:
+ *  <li>
+ *    <div class="reviews-banner">
+ *      <span class="reviews-banner-left"/>
+ *      <span class="reviews-banner-right"/>
+ *    </div>
+ *    <div class="reviews-content">
+ *      <p class="rating">...</p>
+ *      <p>...</p>
+ *    </div>
+ *  </li>
+ * @param {Object} review Review information
+ * @returns {Object} List element
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
-  const name = document.createElement('p');
-  name.innerHTML = review.name;
-  li.appendChild(name);
+  const div1 = document.createElement('div');
+  div1.className = 'reviews-banner';
 
-  const date = document.createElement('p');
+  const name = document.createElement('div');
+  name.innerHTML = review.name;
+  name.className = 'reviews-banner-left';
+  div1.appendChild(name);
+
+  const date = document.createElement('div');
   date.innerHTML = review.date;
-  li.appendChild(date);
+  date.className = 'reviews-banner-right';
+  div1.appendChild(date);
+
+  li.appendChild(div1);
+
+  const div2 = document.createElement('div');
+  div2.className = 'reviews-content';
 
   const rating = document.createElement('p');
+  rating.className = "rating";
   rating.innerHTML = `Rating: ${review.rating}`;
-  li.appendChild(rating);
+  div2.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
-  li.appendChild(comments);
+  div2.appendChild(comments);
+  li.appendChild(div2);
 
   return li;
 }
