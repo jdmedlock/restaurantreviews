@@ -62,7 +62,7 @@ ul, li {
 }
 
 a {
-	color: orange;
+  color: orange;
 	text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ nav h1 a {
 /* -------------- Restaurant Filtering --------------- */
 .filter-options {
   display: block;
-  background-color: #3397DB;
+  background-color: rgb(179, 88, 9);
   width: 100%;
   height: 4rem;
 }
@@ -207,8 +207,8 @@ nav h1 a {
   border-top-left-radius: 40px 40px;
 }
 
-#restaurants-list li h1 {
-  color: #f18200;
+#restaurants-list li h2 {
+  color: rgba(136, 89, 2, 0.945);
   font-family: Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
@@ -223,8 +223,8 @@ nav h1 a {
   font-size: 1rem;
 }
 
-#restaurants-list li a {
-  background-color: orange;
+#restaurants-list li button {
+  background-color: rgba(136, 89, 2, 0.945);
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -270,14 +270,14 @@ nav h1 a {
   text-decoration: underline;
 }
 
-#restaurant-container, #reviews-container {
+#restaurant-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   width: 100%;
 }
 
 #restaurant-name {
-  color: #f18200;
+  color: rgba(136, 89, 2, 0.945);
   font-family: Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
@@ -293,6 +293,7 @@ nav h1 a {
   margin: 0;
 }
 
+/* ------------ Restaurant Reviews Page ------------ */
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -309,8 +310,8 @@ nav h1 a {
   margin: 1rem 0 0 1rem;
 }
 
-/* ------------ Restaurant Reviews Page ------------ */
 #restaurant-hours {
+  background-color: #fff;
   margin: 1rem 1rem;
 }
 
@@ -318,12 +319,19 @@ nav h1 a {
   color: #666;
 }
 
+#reviews-container {
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+  width: 100%;
+}
+
 #reviews-container h2 {
-  color: #f58500;
+  color: rgba(136, 89, 2, 0.945);
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: -1px;
-  margin: 0 0 0 1rem;
+  margin: 0;
+  text-align: center;
 }
 
 #reviews-list {
@@ -371,7 +379,7 @@ nav h1 a {
 }
 
 #reviews-list .rating {
-  background-color: orange;
+  background-color: rgba(136, 89, 2, 0.945);
   color: #fff;
   width: 7rem;
   border-radius: 5px;
@@ -384,11 +392,10 @@ nav h1 a {
   margin: .5rem .5rem auto .5rem;
 }
 
-
 /* ==================== Page Footer ==================== */
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #fff;
   font-size: .5rem;
   letter-spacing: .25rem;
   text-align: center;
@@ -402,6 +409,35 @@ nav h1 a {
   vertical-align: middle;
   margin: 0px;
   padding: 1rem;
+}
+
+/* ============ Suppress Aria Label Display ============ */
+.aria-map-description {
+  display: none;
+}
+
+.aria-neighborhoods-select {
+  display: none;
+}
+
+.aria-cuisine-select {
+  display: none;
+}
+
+.aria-restaurant-cuisine {
+  display: none;
+}
+
+.aria-restaurant-address {
+  display: none;
+}
+
+.aria-restaurant-hours {
+  display: none;
+}
+
+.aria-restaurant-reviews {
+  display: none;
 }
 
 /* ============== Device-specific Layouts ============== */
@@ -420,14 +456,32 @@ nav h1 a {
       "reviews"
       "footer";
   }
+
   #restaurants-list p {
     font-size: 1.5rem;
   }
+
   #restaurant-name {
     font-size: 2rem;
   }
+
   #restaurant-cuisine {
     font-size: 1.5rem;
+  }
+
+  #restaurant-address {
+    text-align: center;
+  }
+  
+  #restaurant-hours {
+    margin: auto 20% auto 20%;
+    width: 60%;
+  }
+
+  #reviews-container {
+    width: 80%;
+    align-items: center;
+    margin: auto;
   }
 }
 
@@ -445,19 +499,38 @@ nav h1 a {
       "reviews"
       "footer";
   }
+
   #restaurants-list {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 10px;
     grid-template: repeat(4, 4fr) / repeat(2, 4fr);
   }
+
   #restaurants-list p {
     font-size: 1.5rem;
   }
+
   #restaurant-name {
     font-size: 3rem;
   }
+
   #restaurant-cuisine {
     font-size: 2rem;
+  }
+
+  #restaurant-address {
+    text-align: center;
+  }
+  
+  #restaurant-hours {
+    margin: auto 25% auto 25%;
+    width: 50%;
+  }
+
+  #reviews-container {
+    width: 60%;
+    align-items: center;
+    margin: auto;
   }
 }
