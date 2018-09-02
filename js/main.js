@@ -8,7 +8,7 @@ var markers = [];
 if ('serviceWorker' in navigator) {
   console.log('Starting ServiceWorker registration...');
   navigator.serviceWorker
-    .register('/sw.js')
+    .register('sw.js')
     .then((reg) => {
       console.log('ServiceWorker registration succeeded - ', reg.scope);
     })

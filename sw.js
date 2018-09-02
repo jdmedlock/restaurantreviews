@@ -15,7 +15,7 @@ self.addEventListener('install', (event) => {
         '/js/dbhelper.js',
         '/js/main.js',
         '/js/restaurant_info.js',
-        'js/sw.js',
+        '/sw.js',
         '/img/notfound.jpg',
       ])
       .catch((error) => {
