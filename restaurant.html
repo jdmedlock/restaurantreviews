@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,21 +25,26 @@
       <ul id="breadcrumb" >
         <li><a href="/">Home</a></li>
       </ul>
-      <section id="map-container">
+      <section id="map-container" aria-labelledby="aria-map-description" role="application">
         <div id="map"></div>
       </section>
+      <label id="aria-map-description" class="aria-map-description">Restaurant location map</label>
 
       <section id="restaurant-container">
         <h2 id="restaurant-name"></h2>
         <img id="restaurant-img">
-        <p id="restaurant-cuisine"></p>
-        <p id="restaurant-address"></p>
-        <table id="restaurant-hours"></table>
+        <p id="restaurant-cuisine" aria-labelledby="aria-restaurant-cuisine"></p>
+        <label id="aria-restaurant-cuisine" class="aria-restaurant-cuisine">Restaurant cuisine type</label>
+        <p id="restaurant-address" aria-labelledby="aria-restaurant-address"></p>
+        <label id="aria-restaurant-address" class="aria-restaurant-address">Restaurant address</label>
+        <table id="restaurant-hours" aria-labelledby="aria-restaurant-hours"></table>
+        <label id="aria-restaurant-hours" class="aria-restaurant-hours">Restaurant Hours</label>
       </section>
 
-      <section id="reviews-container">
+      <section id="reviews-container" aria-labelledby="aria-restaurant-reviews">
         <ul id="reviews-list"></ul>
       </section>
+      <label id="aria-restaurant-reviews" class="aria-restaurant-reviews">Restaurant Reviews</label>
     </main>
 
     <footer id="footer">

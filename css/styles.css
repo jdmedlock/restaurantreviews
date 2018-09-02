@@ -384,7 +384,6 @@ nav h1 a {
   margin: .5rem .5rem auto .5rem;
 }
 
-
 /* ==================== Page Footer ==================== */
 #footer {
   background-color: #444;
@@ -402,6 +401,35 @@ nav h1 a {
   vertical-align: middle;
   margin: 0px;
   padding: 1rem;
+}
+
+/* ============ Suppress Aria Label Display ============ */
+.aria-map-description {
+  display: none;
+}
+
+.aria-neighborhoods-select {
+  display: none;
+}
+
+.aria-cuisine-select {
+  display: none;
+}
+
+.aria-restaurant-cuisine {
+  display: none;
+}
+
+.aria-restaurant-address {
+  display: none;
+}
+
+.aria-restaurant-hours {
+  display: none;
+}
+
+.aria-restaurant-reviews {
+  display: none;
 }
 
 /* ============== Device-specific Layouts ============== */
