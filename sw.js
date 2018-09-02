@@ -16,7 +16,7 @@ self.addEventListener('install', (event) => {
         '/js/main.js',
         '/js/restaurant_info.js',
         'js/sw.js',
-        '/img/na.jpg',
+        '/img/notfound.jpg',
       ])
       .catch((error) => {
         console.log('Failed to open the cache - ', error);
@@ -47,7 +47,7 @@ self.addEventListener('fetch', (event) => {
         .catch((error) => {
           // If an image is not available substitute the not found image
           if (event.request.url.indexOf('.jpg') > NOT_FOUND) {
-            return caches.match('/img/na.jpg');
+            return caches.match('/img/notfound.jpg');
           }
           return new Response('Internet connection is not available', {
             status: 404,
