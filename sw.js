@@ -2,6 +2,8 @@ const cacheID = 'jdm-restaurantreviews-001';
 const NOT_FOUND = -1;
 
 // Cache our app resources when the install event is fired
+// Note that this logic was patterned after an example provided by
+// Doug Brown (https://www.youtube.com/watch?v=92dtrNU1GQc)
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheID).then((cache) => {
