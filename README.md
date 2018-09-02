@@ -7,7 +7,6 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* [Usage](#usage)
 * [Dependencies](#dependencies)
 * [Change Log](#change-log)
 * [Contributing](#contributing)
@@ -25,11 +24,6 @@ accessibility, and front end first orientation.
 You can try out the app here --> [Restaurant Reviews](https://jdmedlock.github.io/restaurantreviews/),
 and the project instructions here -->[Project Specification](https://jdmedlock.github.io/restaurantreviews/project_info.md).
 
-## Usage
-
-### UI Features
-
-*_TBD_*
 
 ### Starting the App
 
