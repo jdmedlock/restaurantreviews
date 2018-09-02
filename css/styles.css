@@ -62,7 +62,7 @@ ul, li {
 }
 
 a {
-  color: rgba(136, 89, 2, 0.945);
+  color: orange;
 	text-decoration: none;
 }
 
@@ -387,7 +387,7 @@ nav h1 a {
 /* ==================== Page Footer ==================== */
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #fff;
   font-size: .5rem;
   letter-spacing: .25rem;
   text-align: center;
