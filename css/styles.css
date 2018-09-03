@@ -428,6 +428,10 @@ nav h1 a {
   display: none;
 }
 
+.aria-breadcrumb {
+  display: none;
+}
+
 .aria-restaurant-address {
   display: none;
 }
@@ -472,7 +476,7 @@ nav h1 a {
   #restaurant-address {
     text-align: center;
   }
-  
+
   #restaurant-hours {
     margin: auto 20% auto 20%;
     width: 60%;
@@ -522,7 +526,7 @@ nav h1 a {
   #restaurant-address {
     text-align: center;
   }
-  
+
   #restaurant-hours {
     margin: auto 25% auto 25%;
     width: 50%;

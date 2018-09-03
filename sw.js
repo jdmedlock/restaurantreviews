@@ -1,7 +1,11 @@
+// Array of currently supported cache names. The first cache name in this
+// array is expected to be the most recent cache name.
 const cacheID = 'jdm-restaurantreviews-001';
 const NOT_FOUND = -1;
 
 // Cache our app resources when the install event is fired
+// Note that this logic was patterned after an example provided by
+// Doug Brown (https://www.youtube.com/watch?v=92dtrNU1GQc)
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheID).then((cache) => {
@@ -21,6 +25,28 @@ self.addEventListener('install', (event) => {
       .catch((error) => {
         console.log('Failed to open the cache - ', error);
       });
+    })
+  );
+});
+
+// When a new service worker is activated remove any old caches that are
+// no longer needed.
+//
+// This `activate` event handler is patterned after one presented in
+// "The Service Worker Lifecycle" by Jake Archibald
+// (see https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    // Compare the cache id's against the list of currently supported id's
+    // and delete any that are no longer supported.
+    caches.keys().then(cacheNames => Promise.all(
+      cacheNames.map(cacheName => {
+        if (![cacheID].includes(cacheName)) {
+          return caches.delete(cacheName);
+        }
+      })
+    )).then(() => {
+      console.log(cacheID,' now ready to handle fetches!');
     })
   );
 });
