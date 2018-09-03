@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
   <!-- Normalize.css for better cross-browser consistency -->
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
@@ -22,9 +22,10 @@
     </header>
 
     <main id="maincontent">
-      <ul id="breadcrumb" >
+      <ul id="breadcrumb" aria-labelledby="aria-breadcrumb" role="navigation">
         <li><a href="/">Home</a></li>
       </ul>
+      <label id="aria-breadcrumb" class="aria-breadcrumb">Breadcrumb navigation</label>
       <section id="map-container" aria-labelledby="aria-map-description" role="application">
         <div id="map"></div>
       </section>
